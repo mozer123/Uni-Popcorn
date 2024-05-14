@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunburst Chart</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🦄 Unicorn Universe</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v6.min.js"></script>
-</head>
-<body>
-    <!-- <h1> Sunburst </h1> -->
-
-    <div id="sunburst"></div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Unicorn Universe 🚀</h1>
+        <p class="subtitle">
+          Exploring Unicorns by
+          <strong> 🌍 Continent, 🇺🇸 Country, 🏭 Industry and 🏢 Company </strong
+          >with a zoomable sunburst 🌞.
+        </p>
+        <p class="description">
+          🦄: Unicorn companies are a select group of privately held startups
+          that have achieved a valuation of over $1 billion.
+        </p>
+        <p class="instruction">
+          Click a node to 🔍➕, <br />
+          or the center to 🔍➖.
+        </p>
+      </div>
+      <div id="sunburst"></div>
+    </div>
     <script src="data.js"></script>
-    <script src="Sunburst.js"></script>
-</body>
+    <script src="sunburst.js"></script>
+  </body>
 </html>
