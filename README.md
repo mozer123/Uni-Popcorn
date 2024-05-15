@@ -10,10 +10,6 @@ The D3 zoomable sunburst inspiration code comes from: <https://observablehq.com/
 
 ## Rationale
 
-Here is a revised version of your writing for improved clarity and better alignment with the question:
-
----
-
 ### Rationale for Design Decisions
 
 Our project aimed to visualize the distribution of unicorn companies across different countries and sectors globally. We chose a zoomable sunburst diagram over multiple pie charts to effectively represent hierarchical data within a single interactive interface. This approach allowed us to explore different levels of the hierarchy seamlessly. Initially, we intended to create three layers: countries, industries, and companies. However, we added a continents layer to address the excessive number of clickable elements in the country layer, particularly for large areas like the US. This addition reduced the complexity of the country layer and enhanced the user’s ability to explore the data in more ways.
@@ -28,10 +24,6 @@ Our project aimed to visualize the distribution of unicorn companies across diff
 - **Smooth Transitions:** As users zoom in and out, the arcs and labels smoothly update their positions and visibility, enhancing the overall user experience.
 
 We considered other visualization techniques but found that the zoomable sunburst diagram best met our needs for displaying hierarchical data in an engaging and efficient manner.
-
----
-
-This revision aims to provide a clear and concise explanation of your design choices and how they address the project's requirements.
 
 ## Development
 
