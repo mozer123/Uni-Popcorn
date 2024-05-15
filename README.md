@@ -2,17 +2,36 @@
 
 ## Intro
 
-This project is for DSC106 <https://dsc106.com/> which is a project-centered course that covers fundamental principles and techniques in data visualization. Specifically, Project 3: Interactive Visualization.
+Welcome to Charlie and Mert's Project 3: Interactive Visualization repo for [DSC106](https://dsc106.com/), a project-centered course that covers fundamental principles and techniques in data visualization! 
 
-Here is the dataset used: <https://www.kaggle.com/datasets/shubhamoujlayan/all-the-unicorns-in-the-world/data>
+The dataset we used comes from: <https://www.kaggle.com/datasets/shubhamoujlayan/all-the-unicorns-in-the-world/data>.
 
-About using zoomable sunbursts with d3: <https://observablehq.com/@d3/zoomable-sunburst>
+The D3 zoomable sunburst inspiration code comes from: <https://observablehq.com/@d3/zoomable-sunburst>
 
 ## Rationale
 
-Our project started with us wondering about the distribution of unicorn companies according to countries and sectors around the world. Using a zoomable sunburst diagram over multiple pie charts allowed for a more efficient and cohesive visualization of hierarchical data, enabling us to explore different levels of the hierarchy within a single, interactive interface. Although our initial goal was to create three layers, namely countries, industries and companies, we later added an extra continents category because there were too many clickable elements in the country layer and some of them, such as the US, occupied a relatively large area. In this way, we both lessened the burden on one layer and provided users with the opportunity to explore in more ways.
+Here is a revised version of your writing for improved clarity and better alignment with the question:
 
-The rainbow color scheme was selected to clearly differentiate between nodes for visual clarity and appeal. Opacity feature was used at the last layer to indicate that there is no further levels to explore. The consistent use of Roboto font ensured modern and readable text. Interaction techniques like click to zoom were implemented to allow users to explore different levels dynamically which provided an intuitive navigation experience. Additionally, as users zoom in and out, the arcs and labels transition smoothly by updating their positions and visibility.
+---
+
+### Rationale for Design Decisions
+
+Our project aimed to visualize the distribution of unicorn companies across different countries and sectors globally. We chose a zoomable sunburst diagram over multiple pie charts to effectively represent hierarchical data within a single interactive interface. This approach allowed us to explore different levels of the hierarchy seamlessly. Initially, we intended to create three layers: countries, industries, and companies. However, we added a continents layer to address the excessive number of clickable elements in the country layer, particularly for large areas like the US. This addition reduced the complexity of the country layer and enhanced the user’s ability to explore the data in more ways.
+
+**Visual Encodings:**
+- **Rainbow Color Scheme:** We selected this to clearly differentiate between nodes, ensuring visual clarity and appeal.
+- **Opacity in Final Layer:** To indicate the absence of further levels to explore, we applied an opacity effect in the last layer.
+- **Roboto Font:** This font was chosen for its modern appearance and readability, providing a consistent look across the visualization.
+
+**Interaction Techniques:**
+- **Click to Zoom:** This interaction allows users to dynamically explore different levels, facilitating intuitive navigation.
+- **Smooth Transitions:** As users zoom in and out, the arcs and labels smoothly update their positions and visibility, enhancing the overall user experience.
+
+We considered other visualization techniques but found that the zoomable sunburst diagram best met our needs for displaying hierarchical data in an engaging and efficient manner.
+
+---
+
+This revision aims to provide a clear and concise explanation of your design choices and how they address the project's requirements.
 
 ## Development
 
