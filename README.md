@@ -33,7 +33,7 @@ Our development process began with a discussion about our plans and objectives f
 After these initial tasks, we reconvened to decide on the most appropriate interactive graph for our dataset and how it would fit into our larger final project. After much deliberation, we settled on an interactive sunburst plot. 
 
 - **Charlie** transformed the data for the plot and created the sunburst visualization.
-- **Mert** structured the layout to create a responsive, visually appealing interface with clear text design.
+- **Mert** structured the layout to create a visually appealing interface with clear text design.
 
 The entire development process took approximately 20 hours. The most time-consuming aspects were the deployment strategies and debugging the interaction code. Finding effective deployment strategies took roughly 5 hours, and debugging the interaction code took roughly 10 hours.
 
