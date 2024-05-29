@@ -1,54 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unicorn Universe</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
-  </head>
-  <body>
-    <div
-      class="container-fluid d-flex flex-column align-items-center justify-content-center vh-100"
-    >
-      <div class="row w-100 h-100">
-        <div
-          class="col-md-4 text-center text-md-left mb-3 d-flex flex-column justify-content-center"
-        >
-          <h1>Unicorn Universe 🚀</h1>
-          <p class="subtitle">
-            Exploring Unicorns by
-            <strong>
-              🌍 Continent, 🇺🇸 Country, 🏭 Industry and 🏢 Company
-            </strong>
-            with a zoomable sunburst 🌞.
-          </p>
-          <p class="description">
-            🦄: Unicorn companies are a select group of privately held startups that have achieved a valuation of over $1 billion.
-          </p>
-          <p class="description">
-            👨‍💻: To see the rationale for our design decision and an overview of our developmental process, visit <a href="https://github.com/mozer123/Uni-Popcorn/blob/gh-pages/README.md">here</a>!
-          </p>
-          <p class="instruction">
-            Click a node to <strong>zoom in</strong> 🔍➕,<br />
-            or the center to <strong>zoom out</strong> 🔍➖.
-          </p>
-        </div>
-        <div class="col-md-8 d-flex justify-content-center align-items-center">
-          <div id="sunburst"></div>
-        </div>
-      </div>
-    </div>
-    <script src="data.js"></script>
-    <script src="Sunburst.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦄</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlie and Mert's Project</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #app {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
