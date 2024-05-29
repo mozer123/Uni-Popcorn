@@ -1,47 +1,40 @@
-# Svelte + Vite
+# Exploring Unicorn Companies with a Zoomable Sunburst
 
-This template should help get you started developing with Svelte in Vite.
+## Intro
 
-## Recommended IDE Setup
+Welcome to Charlie and Mert's Project 3: Interactive Visualization repo for [DSC106](https://dsc106.com/), a project-centered course that covers fundamental principles and techniques in data visualization! 
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+The dataset we used comes from: <https://www.kaggle.com/datasets/shubhamoujlayan/all-the-unicorns-in-the-world/data>.
 
-## Need an official Svelte framework?
+The D3 zoomable sunburst inspiration code comes from: <https://observablehq.com/@d3/zoomable-sunburst>
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+## Rationale for Design Decisions
 
-## Technical considerations
+Our project aimed to visualize the distribution of unicorn companies across different countries and sectors globally. We chose a zoomable sunburst diagram over multiple pie charts to effectively represent hierarchical data within a single interactive interface. This approach allowed us to explore different levels of the hierarchy seamlessly. 
 
-**Why use this over SvelteKit?**
+**Visual Encodings:**
+- **Rainbow Color Scheme:** We selected this to clearly differentiate between nodes, ensuring visual clarity and appeal.
+- **Opacity in Final Layer:** To indicate the absence of further levels to explore, we applied an opacity effect in the last layer.
+- **Roboto Font:** This font was chosen for its modern appearance and readability, providing a consistent look across the visualization.
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+**Interaction Techniques:**
+- **Click to Zoom:** This interaction allows users to dynamically explore different levels, facilitating intuitive navigation.
+- **Smooth Transitions:** As users zoom in and out, the arcs and labels smoothly update their positions and visibility, enhancing the overall user experience.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+Initially, we intended to create three layers: countries, industries, and companies. However, we added a continents layer to address the excessive number of clickable elements in the country layer, particularly for large areas like the US. This addition reduced the complexity of the country layer and enhanced the user’s ability to explore the data in more ways. We considered other visualization techniques but found that the zoomable sunburst diagram best met our needs for displaying hierarchical data in an engaging and efficient manner.
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## Overview of Development Process
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+Our development process began with a discussion about our plans and objectives for the project. We decided to use this project as part of our final assignment. With this in mind:
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- **Charlie** conducted Exploratory Data Analysis (EDA) on the raw dataset, uncovering interesting features within the data.
+- **Mert** focused on exploring strategies to deploy the website and identified the necessary steps to achieve our end goal.
 
-**Why include `.vscode/extensions.json`?**
+After these initial tasks, we reconvened to decide on the most appropriate interactive graph for our dataset and how it would fit into our larger final project. After much deliberation, we settled on an interactive sunburst plot. 
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- **Charlie** transformed the data for the plot and created the sunburst visualization.
+- **Mert** structured the layout to create a visually appealing interface with clear text design.
 
-**Why enable `checkJs` in the JS template?**
+The entire development process took approximately 20 hours. The most time-consuming aspects were the deployment strategies and debugging the interaction code. Finding effective deployment strategies took roughly 5 hours, and debugging the interaction code took roughly 10 hours.
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+This collaborative approach allowed us to efficiently divide the workload and leverage each team member's strengths, resulting in a cohesive and functional final product.
